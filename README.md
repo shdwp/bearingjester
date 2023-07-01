@@ -72,7 +72,7 @@ Verify that axis control and Jester macroses actually work. Then you can set `DE
 
 While most features are very simple to use, you might want to practice some first from the RIO pit to get the idea how TID hooking works, which buttons do what and when, since you will be doing it practically blind from the front seat.
 
-* __Radar control__ - use the joystick buttons you've set up during configuration. Keep in mind that TWS auto will override your control as soon as it picks up any contacts
+* __Radar control__ - use the joystick buttons you've set up during configuration. Keep in mind that TWS auto will override your control as soon as it picks up any contacts, but you can ask Jester to switch to TWS manual and that will let you control the radar
 * __TID Hooks__ - you need to bind `HCU half-action` (this needs to be held down to bring up the cursor), `HCU backward/forward/left/right` to move it and `HCU full-action` to hook stuff. Note that pressind the `half-action` will unhook whatever is hooked and that can screw up Jester doing stuff. For example, if you unhook waypoint that he's entering lat\lon for it will screw up the navigation suite and __you__ will need to perform an in flight nav fix to get it working again
 * __TID Symbology Settings__ - bind any of the `TID Symbology: ...` binds to toggle specific elements on-off. Most useful ones are `Alt Num`, `Vec Vector`, `Sym Elem` and `Data Link`
 * __STT hooked contact__ - bind `RADAR Pulse (Doppler) Single Target Track`, it will attemp to STT the contact that you've hooked on TID
