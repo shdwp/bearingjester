@@ -80,7 +80,7 @@ While most features are very simple to use, you might want to practice some firs
 * __TWS Shooting Priority__ can be changed by hooking a contact and using bind `Next launch`. The contact will become new 1st TWS contact
 * __Chaff and Flare programs__ - bind `AN/ALE-39 Right Data Dispenser Switch Down - Chaff Program` and `AN/ALE-39 Right Data Dispenser Switch Right - Flare Program`
 * __RWR Offset and Limit functions__ - bind `RWR Display Mode LMT` and `RWR Display Mode OFST`
-* __Control LANTIRN via keys__ - ask for direct head control, wait for Jester to ground stab (if it wasn't stabilized prior) and then use binds `LANTIRN Slew Up/Down/Left/Right`.
+* __Control LANTIRN via keys__ - disable Jester and then use binds `LANTIRN Slew Up/Down/Left/Right`. You can also use direct head control which will stop him from messing with the Lantirn, but the moment that is disable he will snap the TGP back to his own last position
 * __Disable/enable MLC__ - use binds `MLC out` and `MLC auto` to turn MLC off or get it back to auto position. Don't leave it in out, Jester won't fix it for you
 
 ### Jester Macros
@@ -95,7 +95,7 @@ MACROS["KEY_TO_TRIGGER"] := "SEQUENCE"
 ```
 Where `KEY_TO_TRIGGER` would be the key you need to press in order to activate it (don't forget that you also need to hold `MACROS_MOD` which is `RShift` by default), and `SEQUENCE` corresponds to the sequence of items to select starting from the main Jester menu (which is always brought up when you press `Jester AI - Toggle Menu` twice), as they numbered in the menu itself. Keep in mind that some items change positions based on circumstances.
 
-### Navigation fixes
+### (Not needed anymore) Navigation fixes 
 You can perform navigation fixes, albeit doing it blindly is tricky. For that you will need `CAP button X` mapped, and also `CAP category NAV` plus `CAP category TAC`.
 You can read up on the full procedure in the [Heatblur manual](https://www.heatblur.se/F-14Manual/general.html#navigation-fix-update), and I strongly recommend doing it a couple of times from the RIO seat in single player before attempting it blind.
 ##### TACAN Front Seat Fix
